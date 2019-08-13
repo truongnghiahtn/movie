@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  font-family: 'Exo 2', sans-serif;
+  background: #ffffff; }
+
+* {
+  box-sizing: border-box; }
+
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+  display: block; }
+
+.comingSoon {
+  background-color: #101010;
+  position: relative;
+  overflow: hidden; }
+  .comingSoon .coming__title {
+    position: relative;
+    font-size: 15px;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 40px;
+    letter-spacing: 1.7px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+    text-transform: uppercase; }
+    .comingSoon .coming__title::before {
+      content: "";
+      width: 10%;
+      height: 4px;
+      bottom: 0;
+      position: absolute;
+      background: linear-gradient(to right, #fbbd61, #ec7532); }
+  .comingSoon .tab__item .coming__content {
+    padding-bottom: 40px; }
+    .comingSoon .tab__item .coming__content .coming__overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover !important; }
+    .comingSoon .tab__item .coming__content .coming__detail .coming__detail__item span {
+      font-size: 14px;
+      font-weight: normal;
+      color: #ec7532;
+      letter-spacing: 2px; }
+    .comingSoon .tab__item .coming__content .coming__detail .coming__detail__item h3 {
+      font-size: 34px;
+      font-weight: normal;
+      color: #fff;
+      margin-bottom: 0;
+      line-height: 1.4em; }
+    .comingSoon .tab__item .coming__content .coming__detail .coming__detail__item .coming__detial__icon {
+      font-size: 10px; }
+      .comingSoon .tab__item .coming__content .coming__detail .coming__detail__item .coming__detial__icon .movie__star {
+        margin: 0 2px;
+        color: #fbbd61;
+        display: inline-block; }
+      .comingSoon .tab__item .coming__content .coming__detail .coming__detail__item .coming__detial__icon .movie__star-rating {
+        color: #d8d8d8; }
+      .comingSoon .tab__item .coming__content .coming__detail .coming__detail__item .coming__detial__icon span {
+        font-size: 12px;
+        font-weight: normal;
+        color: #fff;
+        color: #fff;
+        opacity: 0.75; }
+    .comingSoon .tab__item .coming__content .coming__detail .coming__detail__item p {
+      margin: 20px 0; }
+    .comingSoon .tab__item .coming__content .coming__detail .coming__detail__item a {
+      font-size: 14px;
+      font-weight: normal;
+      color: #ec7532;
+      text-decoration: none;
+      letter-spacing: 2px; }
+      .comingSoon .tab__item .coming__content .coming__detail .coming__detail__item a:hover {
+        color: #fbbd61; }
+    .comingSoon .tab__item .coming__content .coming__detail .coming__detail__video a {
+      box-shadow: 0 0 50px 15px rgba(0, 0, 0, 0.75);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .comingSoon .tab__item .coming__content .coming__detail .coming__detail__video a i {
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        position: absolute;
+        display: block;
+        text-align: center;
+        text-indent: 5px;
+        line-height: 75px;
+        width: 80px;
+        height: 80px;
+        border: 2px solid #ec7532;
+        border-radius: 50%;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out; }
+    .comingSoon .tab__item .coming__content .coming__detail .coming__detail__video:hover i {
+      transform: scale(0.9); }
+  .comingSoon #myTab {
+    position: relative;
+    padding: 55px 0; }
+    .comingSoon #myTab::before {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: -250%;
+      display: block;
+      width: 500%;
+      height: 100%;
+      padding: 55px 0;
+      background: rgba(16, 16, 16, 0.4);
+      content: ""; }
+    .comingSoon #myTab .owl-stage {
+      transition: all .3s ease-in-out !important; }
+      .comingSoon #myTab .owl-stage .carousel__item {
+        margin: 0 15px;
+        opacity: 0.35;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer; }
+        .comingSoon #myTab .owl-stage .carousel__item .nav__img img {
+          border-radius: 10px; }
+        .comingSoon #myTab .owl-stage .carousel__item .nav__content h5 {
+          font-size: 16px;
+          font-weight: normal;
+          color: #fff;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin-top: 20px;
+          margin-bottom: 0; }
+        .comingSoon #myTab .owl-stage .carousel__item .nav__content span {
+          font-size: 14px;
+          font-weight: normal;
+          color: #fff;
+          opacity: 0.5; }
+        .comingSoon #myTab .owl-stage .carousel__item:hover {
+          opacity: 1; }
+        .comingSoon #myTab .owl-stage .carousel__item.opacity {
+          opacity: 1; }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px; } }
+.owl-next,
+.owl-prev {
+  position: absolute;
+  right: -65px;
+  top: 35%;
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+  transition: all 300ms ease-in-out; }
+  .owl-next span,
+  .owl-prev span {
+    font-size: 50px;
+    line-height: 20px;
+    background: -webkit-linear-gradient(#fbbd61, #ec7532);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .owl-next:focus,
+  .owl-prev:focus {
+    box-shadow: none;
+    outline: none; }
+
+.owl-prev {
+  right: unset;
+  left: -65px; }
+  .owl-prev:hover {
+    left: -60px;
+    opacity: 0.6; }
+
+.owl-next:hover {
+  right: -60px;
+  opacity: 0.6; }
+
+/*# sourceMappingURL=index.css.map */
