@@ -1,7 +1,7 @@
 // variable color
 $color-black-0: #29303b; // default
 $color-blue-0: #fe7900;
-$color-orange-0: #fe7900;
+$color-orange-0:#fe7900;
 $color-red-0: #fa5238;
 $color-red-1: #fb4226;
 $color-gray-0: #9b9b9b;
@@ -42,9 +42,4 @@ $fw-bold-1: 700;
 $fw-bold-2: 500;
 $fw-bold: bold;
 //break points
-$breakpoints: (
-  "extra-large": 1200px,
-  "large": 992px,
-  "medium": 768px,
-  "small": 576px
-);
+$breakpoints: ( "extra-large": 1200px, "large": 992px, "medium": 768px, "small": 576px);

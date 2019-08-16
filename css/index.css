@@ -16,171 +16,142 @@ article,
 figure {
   display: block; }
 
-.comingSoon {
-  background-color: #101010;
-  position: relative;
-  overflow: hidden; }
-  .comingSoon .coming__title {
-    position: relative;
-    font-size: 15px;
-    font-weight: normal;
-    color: #fff;
-    margin-bottom: 40px;
-    letter-spacing: 1.7px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #333;
-    text-transform: uppercase; }
-    .comingSoon .coming__title::before {
-      content: "";
-      width: 10%;
-      height: 4px;
-      bottom: 0;
+.home_intro .intro_content .nav-tabs {
+  border-bottom: none; }
+  .home_intro .intro_content .nav-tabs .nav-item .nav-link {
+    text-decoration: none;
+    color: #29303b;
+    border: none;
+    padding-right: 0px;
+    padding-left: 0px; }
+    .home_intro .intro_content .nav-tabs .nav-item .nav-link::after {
+      content: "/";
+      color: #29303b;
+      padding: 0 10px;
+      font-weight: 600;
+      font-size: 25px; }
+  .home_intro .intro_content .nav-tabs .nav-item .nav-link.active {
+    color: #fe7900; }
+  .home_intro .intro_content .nav-tabs .nav-item:last-child .nav-link::after {
+    content: ""; }
+.home_intro .intro_content .tab-content {
+  position: relative; }
+  .home_intro .intro_content .tab-content .carousel-inner .movie-info {
+    overflow: hidden;
+    position: relative; }
+    .home_intro .intro_content .tab-content .carousel-inner .movie-info .movie-img {
+      position: relative; }
+      .home_intro .intro_content .tab-content .carousel-inner .movie-info .movie-img img {
+        border-bottom: 5px solid #fe7900;
+        transition: all 0.2s;
+        height: 370px;
+        width: 100%; }
+      .home_intro .intro_content .tab-content .carousel-inner .movie-info .movie-img h2 {
+        position: absolute;
+        top: 115px;
+        left: 90px;
+        z-index: 10;
+        width: 70px;
+        height: 70px;
+        line-height: 65px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.8);
+        font-size: 30px;
+        font-weight: 600;
+        color: #4a4a4a; }
+      .home_intro .intro_content .tab-content .carousel-inner .movie-info .movie-img h3 {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        z-index: 10;
+        width: 70px;
+        height: 70px;
+        line-height: 65px;
+        border-radius: 50%;
+        background-color: rgba(255, 165, 0, 0.8);
+        font-size: 34px;
+        font-weight: 600;
+        color: #34ff03;
+        transform: rotate(20deg); }
+      .home_intro .intro_content .tab-content .carousel-inner .movie-info .movie-img .movie-content h1 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #29303b; }
+      .home_intro .intro_content .tab-content .carousel-inner .movie-info .movie-img .movie-content p {
+        font-size: 16px;
+        font-weight: #333;
+        color: normal;
+        margin: 0; }
+    .home_intro .intro_content .tab-content .carousel-inner .movie-info .movie-detail {
+      transition: all 1s;
+      opacity: 0;
       position: absolute;
-      background: linear-gradient(to right, #fbbd61, #ec7532); }
-  .comingSoon .tab__item .coming__content {
-    padding-bottom: 40px; }
-    .comingSoon .tab__item .coming__content .coming__overlay {
-      position: absolute;
+      z-index: 10;
       top: 0;
-      right: 0;
-      bottom: 0;
       left: 0;
+      transform: rotateY(180deg);
+      background-color: rgba(0, 0, 0, 0.8);
       width: 100%;
       height: 100%;
-      background-size: cover !important; }
-    .comingSoon .tab__item .coming__content .coming__detail .coming__detail__item span {
-      font-size: 14px;
-      font-weight: normal;
-      color: #ec7532;
-      letter-spacing: 2px; }
-    .comingSoon .tab__item .coming__content .coming__detail .coming__detail__item h3 {
-      font-size: 34px;
-      font-weight: normal;
-      color: #fff;
-      margin-bottom: 0;
-      line-height: 1.4em; }
-    .comingSoon .tab__item .coming__content .coming__detail .coming__detail__item .coming__detial__icon {
-      font-size: 10px; }
-      .comingSoon .tab__item .coming__content .coming__detail .coming__detail__item .coming__detial__icon .movie__star {
-        margin: 0 2px;
-        color: #fbbd61;
-        display: inline-block; }
-      .comingSoon .tab__item .coming__content .coming__detail .coming__detail__item .coming__detial__icon .movie__star-rating {
-        color: #d8d8d8; }
-      .comingSoon .tab__item .coming__content .coming__detail .coming__detail__item .coming__detial__icon span {
-        font-size: 12px;
-        font-weight: normal;
-        color: #fff;
-        color: #fff;
-        opacity: 0.75; }
-    .comingSoon .tab__item .coming__content .coming__detail .coming__detail__item p {
-      margin: 20px 0; }
-    .comingSoon .tab__item .coming__content .coming__detail .coming__detail__item a {
-      font-size: 14px;
-      font-weight: normal;
-      color: #ec7532;
-      text-decoration: none;
-      letter-spacing: 2px; }
-      .comingSoon .tab__item .coming__content .coming__detail .coming__detail__item a:hover {
-        color: #fbbd61; }
-    .comingSoon .tab__item .coming__content .coming__detail .coming__detail__video a {
-      box-shadow: 0 0 50px 15px rgba(0, 0, 0, 0.75);
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      .comingSoon .tab__item .coming__content .coming__detail .coming__detail__video a i {
+      padding: 30px 20px; }
+      .home_intro .intro_content .tab-content .carousel-inner .movie-info .movie-detail h1 {
         font-size: 24px;
-        font-weight: 700;
-        color: #fff;
-        position: absolute;
-        display: block;
-        text-align: center;
-        text-indent: 5px;
-        line-height: 75px;
-        width: 80px;
-        height: 80px;
-        border: 2px solid #ec7532;
+        font-weight: 600;
+        color: #ffffff;
+        padding: 20px 0; }
+      .home_intro .intro_content .tab-content .carousel-inner .movie-info .movie-detail ul {
+        padding-left: 0;
+        width: 100%; }
+        .home_intro .intro_content .tab-content .carousel-inner .movie-info .movie-detail ul li {
+          list-style: none;
+          display: flex;
+          color: rgba(255, 255, 255, 0.8);
+          font-weight: 500; }
+          .home_intro .intro_content .tab-content .carousel-inner .movie-info .movie-detail ul li span {
+            color: #fff;
+            padding-left: 5px; }
+      .home_intro .intro_content .tab-content .carousel-inner .movie-info .movie-detail h2 {
+        font-size: 30px;
+        font-weight: 600;
+        color: #4a4a4a;
+        width: 70px;
+        height: 70px;
+        line-height: 65px;
         border-radius: 50%;
-        text-decoration: none;
-        transition: all 0.3s ease-in-out; }
-    .comingSoon .tab__item .coming__content .coming__detail .coming__detail__video:hover i {
-      transform: scale(0.9); }
-  .comingSoon #myTab {
-    position: relative;
-    padding: 55px 0; }
-    .comingSoon #myTab::before {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: -250%;
-      display: block;
-      width: 500%;
-      height: 100%;
-      padding: 55px 0;
-      background: rgba(16, 16, 16, 0.4);
-      content: ""; }
-    .comingSoon #myTab .owl-stage {
-      transition: all .3s ease-in-out !important; }
-      .comingSoon #myTab .owl-stage .carousel__item {
-        margin: 0 15px;
-        opacity: 0.35;
-        transition: all 0.3s ease-in-out;
-        cursor: pointer; }
-        .comingSoon #myTab .owl-stage .carousel__item .nav__img img {
-          border-radius: 10px; }
-        .comingSoon #myTab .owl-stage .carousel__item .nav__content h5 {
-          font-size: 16px;
-          font-weight: normal;
-          color: #fff;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          margin-top: 20px;
-          margin-bottom: 0; }
-        .comingSoon #myTab .owl-stage .carousel__item .nav__content span {
-          font-size: 14px;
-          font-weight: normal;
-          color: #fff;
-          opacity: 0.5; }
-        .comingSoon #myTab .owl-stage .carousel__item:hover {
-          opacity: 1; }
-        .comingSoon #myTab .owl-stage .carousel__item.opacity {
-          opacity: 1; }
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1170px; } }
-.owl-next,
-.owl-prev {
-  position: absolute;
-  right: -65px;
-  top: 35%;
-  width: 40px;
-  height: 40px;
-  z-index: 999;
-  transition: all 300ms ease-in-out; }
-  .owl-next span,
-  .owl-prev span {
-    font-size: 50px;
-    line-height: 20px;
-    background: -webkit-linear-gradient(#fbbd61, #ec7532);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
-  .owl-next:focus,
-  .owl-prev:focus {
-    box-shadow: none;
-    outline: none; }
-
-.owl-prev {
-  right: unset;
-  left: -65px; }
-  .owl-prev:hover {
-    left: -60px;
-    opacity: 0.6; }
-
-.owl-next:hover {
-  right: -60px;
-  opacity: 0.6; }
+        background: orange;
+        text-align: center;
+        margin: 0 auto;
+        border: 2px solid #f5f1f0;
+        transition: all 2s; }
+      .home_intro .intro_content .tab-content .carousel-inner .movie-info .movie-detail .movie-trailer {
+        padding-top: 110px; }
+        .home_intro .intro_content .tab-content .carousel-inner .movie-info .movie-detail .movie-trailer p a {
+          text-decoration: none;
+          font-size: 20px; }
+          .home_intro .intro_content .tab-content .carousel-inner .movie-info .movie-detail .movie-trailer p a .fa {
+            color: orange; }
+          .home_intro .intro_content .tab-content .carousel-inner .movie-info .movie-detail .movie-trailer p a span {
+            color: #ffffff; }
+    .home_intro .intro_content .tab-content .carousel-inner .movie-info:hover .movie-detail {
+      opacity: 1;
+      transform: rotateY(360deg); }
+    .home_intro .intro_content .tab-content .carousel-inner .movie-info:hover .movie-img img {
+      transform: scale(1.6); }
+  .home_intro .intro_content .tab-content .carousel-control-prev {
+    position: absolute;
+    top: 415px;
+    left: -80px;
+    z-index: 100;
+    background: #000;
+    width: 20px;
+    height: 30px; }
+  .home_intro .intro_content .tab-content .carousel-control-next {
+    position: absolute;
+    top: 415px;
+    right: -80px;
+    z-index: 100;
+    background: #000;
+    width: 20px;
+    height: 30px; }
 
 /*# sourceMappingURL=index.css.map */
