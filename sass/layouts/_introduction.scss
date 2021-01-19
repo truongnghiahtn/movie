@@ -1,0 +1,173 @@
+.home_intro {
+  .intro_content {
+    .nav-tabs {
+      border-bottom: none;
+      .nav-item {
+        .nav-link {
+          text-decoration: none;
+          color: $color-black-0;
+          border: none;
+          padding-right: 0px;
+          padding-left: 0px;
+          &::after {
+            content: "/";
+            color: $color-black-0;
+            padding: 0 10px;
+            font-weight: 600;
+            font-size: 25px;
+          }
+        }
+        .nav-link.active {
+          color: $color-orange-0;
+        }
+      }
+      .nav-item:last-child {
+        .nav-link {
+          &::after {
+            content: "";
+          }
+        }
+      }
+    }
+    .tab-content {
+      position: relative;
+      .carousel-inner {
+        .movie-info {
+          overflow: hidden;
+          .movie-img {
+            position: relative;
+            img {
+              border-bottom: 5px solid $color-orange-0;
+              transition: all 0.2s;
+              height: 370px;
+              width: 100%;
+            }
+            h2 {
+              position: absolute;
+              top: 115px;
+              left: 90px;
+              z-index: 10;
+              width: 70px;
+              height: 70px;
+              line-height: 65px;
+              border-radius: 50%;
+              background-color: rgba($color: #ffffff, $alpha: 0.8);
+              @include text($fs-5 + 6, $fw-bold-0, $color-gray-1);
+            }
+            h3 {
+              position: absolute;
+              top: 30px;
+              right: 30px;
+              z-index: 10;
+              width: 70px;
+              height: 70px;
+              line-height: 65px;
+              border-radius: 50%;
+              background-color: rgba($color: orange, $alpha: 0.8);
+              @include text($fs-5 + 10, 600, #34ff03);
+              transform: rotate(20deg);
+            }
+            .movie-content {
+              h1 {
+                @include text($fs-5, $fw-bold-0, $color-black-0);
+              }
+              p {
+                @include text($fs-3, $color-gray-2, $fw-normal);
+                margin: 0;
+              }
+            }
+          }
+          position: relative;
+          .movie-detail {
+            transition: all 1s;
+            opacity: 0;
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            transform: rotateY(180deg);
+            background-color: rgba($color: #000000, $alpha: 0.8);
+            width: 100%;
+            height: 100%;
+            padding: 30px 20px;
+            h1 {
+              @include text($fs-5, $fw-bold-0, #ffffff);
+              padding: 20px 0;
+            }
+            ul {
+              padding-left: 0;
+              width: 100%;
+              li {
+                list-style: none;
+                display: flex;
+                color: rgba($color: #ffffff, $alpha: 0.8);
+                font-weight: 500;
+                span {
+                  color: $color-white-0;
+                  padding-left: 5px;
+                }
+              }
+            }
+            h2 {
+              @include text($fs-5 + 6, $fw-bold-0, $color-gray-1);
+              width: 70px;
+              height: 70px;
+              line-height: 65px;
+              border-radius: 50%;
+              background: orange;
+              text-align: center;
+              margin: 0 auto;
+              border: 2px solid $color-white-1;
+              transition: all 2s;
+            }
+            .movie-trailer {
+              padding-top: 110px;
+              p {
+                a {
+                  text-decoration: none;
+                  font-size: $fs-4;
+                  .fa {
+                    color: orange;
+                  }
+                  span {
+                    color: #ffffff;
+                  }
+                }
+              }
+            }
+          }
+          &:hover {
+            .movie-detail {
+              opacity: 1;
+              transform: rotateY(360deg);
+            }
+            .movie-img {
+              img {
+                transform: scale(1.6);
+              }
+            }
+          }
+        }
+      }
+      .carousel-control-prev {
+        position: absolute;
+        top: 415px;
+        left: -80px;
+        z-index: 100;
+        background: #000;
+        width: 20px;
+        height: 30px;
+      }
+      .carousel-control-next {
+        position: absolute;
+        top: 415px;
+        right: -80px;
+        z-index: 100;
+        background: #000;
+        width: 20px;
+        height: 30px;
+      }
+    }
+  }
+}
+
